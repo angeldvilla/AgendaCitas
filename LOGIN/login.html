@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>MEDICARE | Inicia sesión</title>
+    <link rel="stylesheet" href="estilologin.css">
+    <link rel="shortcut icon" href="imagenes/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../codigo.js"></script>
+  </head>
+
+  <body>
+    <div id="contenedor">
+    <div class="login-box">
+      <img src="imagenes/logo.jpg" class="avatar" alt="Avatar Image">
+      
+      <h1>MEDICARE</h1>
+      <form class="formulario" method="POST" action="../controlador/login.php">
+      
+        <!-- USERNAME INPUT -->
+        <label for="usuario">Usuario</label>
+          <input type="text" name="usuario" placeholder="Ingrese su usuario" required="">
+          
+        <!-- PASSWORD INPUT -->
+        <label for="password">Contraseña</label>
+          <input type="password" name="password" placeholder="Ingrese su contraseña" required="">
+        
+          <input type="submit" value="Iniciar sesión">
+          
+        <!--<a href="../index.html">Omitir inicio de sesión (temporal)</a>  <br>-->
+        <a href="recuperar.html">Restablecer contraseña</a><br>
+        <a href="registro.html">Registrarme</a>
+        
+      </form>
+    </div>
+
+  </div>
+
+   <script src="../codigo.js"> </script>
+  </body>
+</html>

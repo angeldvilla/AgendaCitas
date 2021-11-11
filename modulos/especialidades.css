@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --green:#57799c;
+    --medical: #24303c;
+    --black:#444;
+    --light-color:rgb(51, 47, 47);
+    --box-shadow:.5rem .5rem 0 rgba(22, 70, 160, 0.2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--medical);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #3a2121;
+  background-image: url('../imagenes/mouse.jpg');
+  background-size: cover;
+  margin:0; 
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; 
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s ease-out;
+  text-decoration: none;
+}
+
+/*CONTENEDOR*/
+#contenedor {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  display: flow-root;
+ 
+}
+
+/*INDEX*/
+
+.menu {
+  list-style: none;
+  padding: 0;
+  background: #24303c;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+  display: inline-block;
+  text-align: center;
+}
+
+a.inicio{
+  color: #fff;
+}
+
+.menu a.inicio:hover{
+  color: #fff;
+  background : var(--green);
+  transition: all .5s ease;
+}
+
+a.registro{
+    color: white;
+}
+
+.menu  a.registro:hover{
+  color: #fff;
+  background: var(--green);
+  transition: all .5s ease;
+}
+
+.menu a:hover {
+  color: #fff;
+  background: #3f5266;
+  transition: all .5s ease;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  border:var(--border);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  color:var(--green);
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #fff;
+}
+
+.btn span{
+  padding:.7rem 1rem;
+  border-radius: .5rem;
+  background: var(--green);
+  color:#fff;
+  margin-left: .5rem;
+}
+
+.btn:hover{
+  background: var(--green);
+  color:#fff;
+  transition: all .5s ease;
+}
+
+.btn:hover span{
+  color: var(--medical);
+  background:#fff;
+  margin-left: 1rem;
+  transition: all .5s ease;
+}
+
+/*ESPECIALIDADES*/
+
+.especialidad {
+    width: 105%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+   
+  }
+  
+  
+  .title {
+    text-align: center;
+    font-size: 40px;
+    color: #4c4d4d;
+    margin-top: 75px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    
+  }
+  
+  .container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease;
+  }
+  
+  .container .card img {
+    width: 330px;
+    height: 220px;
+  }
+  
+  .container .card h4 {
+    font-weight: 600;
+  }
+  
+  .container .card p {
+    padding: 0 2rem;
+    font-size: 12.8px;
+    font-weight: 300;
+  }
+  
+  .container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+  }
+  
+  /*ESPECIALIDADES*/
+  
+
+  /*FOOTER PARA TODOS LOS MODULOS*/
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:2rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--green);
+  }
+  
+  .footer .box-container .box a:hover i{
+    padding-right:2rem;
+    transition: all .5s ease;
+  }
+  
+  .footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+  }
+  
+  .footer .credit span{
+    color:var(--green);
+  }
+  
+  /*FOOTER PARA TODOS LOS MODULOS*/
+  
+  
+  /* MEDIA QUERIES RESPONSIVE */
+  
+  @media (max-width:450px){
+  
+    html{
+        font-size: 50%;
+    }
+  
+  }
+  
+  @media (max-width: 767px) {
+      .NoScroll{
+          overflow-y: hidden;
+      }
+      .NavBarP-Logo{
+          width: 100%;
+          z-index: 99;
+          position: fixed;
+          border-bottom: 1px solid rgba(255, 255, 255, .2);
+      }
+      .NavBarP-Nav{
+          width: 100%;
+          padding-top: 50px;
+          height: 100%;
+          z-index: 97;
+          position: fixed;
+          opacity: 0;
+          pointer-events: none;
+          transition: all .3s ease-in-out;
+      }
+      .NavBarP-Nav > ul{
+          padding-right: 0;
+          text-align: center;
+          height: 100%;
+      }
+      .NavBarP-Nav > ul > li{
+          display: block;
+      }
+      .btn-menuMobile{
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          right: 0;
+          color: #fff;
+          height: 50px;
+          width: 50px;
+          cursor: pointer;
+          line-height: 50px;
+          font-size: 25px;
+          transition: all .3s ease-in-out;
+      }
+      .btn-menuMobile:hover{
+          color: #FAE76F;
+      }
+      .Login{
+          position: fixed;
+          height: 100%;
+          top: 0;
+          padding-top: 50px;
+          z-index: 100;
+      }
+  }
+  
+  
+  /* col-sm */
+  @media (min-width: 768px) and (max-width: 991px) {
+      
+  }
+  
+  /* col-md */
+  @media (min-width: 992px) and (max-width: 1199px) {
+      
+  }
+  
+  /* col-lg */
+  @media (min-width: 1200px) {
+      
+  }
+  
+  /*col-sm col-md col-lg*/
+  @media (min-width: 768px) {
+      .Login{
+          border: 1px solid #E1E1E1;
+          position: absolute;
+          top: 62px;
+          width: 250px;
+      }
+      .Login::after,
+      .Login::before {
+          bottom: 100%;
+          right: 14px;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+      }
+      .Login::after {
+          border-color: rgba(136, 183, 213, 0);
+          border-bottom-color: #fff;
+          border-width: 10px;
+          margin-right: 0px;
+      }
+      .Login::before {
+          border-color: rgba(194, 225, 245, 0);
+          border-bottom-color: #E1E1E1;
+          border-width: 12px;
+          margin-right: -2px;
+      }
+  }
+  
+  
+  /* @media (max-width:991px){
+  
+    html{
+        font-size: 55%;
+    }
+  
+    .header{
+        padding: 2rem;
+    }
+  
+    section{
+      width: 95%;
+      margin: 0.5em;
+      float: none;
+      padding:2rem;
+    }
+  
+    #contenedor{
+        width: 95%;
+        margin: 0.5em;
+        float: none;
+        padding:2rem;
+      
+    }
+  
+  }
+  
+  @media (max-width:720px){
+  
+    #menu-btn{
+        display: initial;
+    }
+  
+    .header .navbar{
+        position: absolute;
+        top:115%; right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+  
+    .header .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+  
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin:2.5rem;
+    }
+  
+  } */
+  
