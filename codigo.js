@@ -1,5 +1,5 @@
 console.log("Hola mundo HIJUEPUTA siuu");
-console.log("En este documento se practicará algo de JavaScript :)");
+/* console.log("En este documento se practicará algo de JavaScript :)"); */
 
 /* var numero, coma = ",";
 for (numero = 1; numero <= 10; numero++) {
@@ -25,3 +25,6 @@ function ciclo() {
 razas();
 ciclo();
 */
+
+
+/* VIVA LA CUCA HPPPP */
