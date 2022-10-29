@@ -1,4 +1,4 @@
-console.log("Hola mundo");
+console.log("Hola mundo HIJUEPUTA siuu");
 console.log("En este documento se practicará algo de JavaScript :)");
 
 /* var numero, coma = ",";
